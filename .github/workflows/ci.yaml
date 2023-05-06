@@ -1,0 +1,15 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: asdf-vm/actions/install@v2
+      - run: npm ci
+      - run: npm test
