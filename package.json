@@ -1,6 +1,6 @@
 {
-  "name": "@jaedle-kata/eslint-kata-ruleset",
-  "version": "0.1.2",
+  "name": "@jaedle-kata/eslint-plugin-kata-ruleset",
+  "version": "0.1.3",
   "description": "Kata ruleset for eslint",
   "main": "index.js",
   "scripts": {
