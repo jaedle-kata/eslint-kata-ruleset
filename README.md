@@ -1,1 +1,1 @@
-# Kata rulset for eslint
+# Kata ruleset for eslint

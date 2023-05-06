@@ -1,0 +1,17 @@
+const rule = require('./no-for');
+
+const RuleTester = require('eslint').RuleTester;
+
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2015 } });
+
+ruleTester.run('no-for', rule.rules["@jaedle-kata/no-for"], {
+    valid: [
+        'const arr = [1, 2, 3]; arr.forEach((item) => console.log(item));',
+    ],
+    invalid: [
+        {
+            code: 'for (let i = 0; i < 10; i++) { console.log(i); }',
+            errors: [{ message: 'use of for-loops is forbidden' }],
+        },
+    ],
+});

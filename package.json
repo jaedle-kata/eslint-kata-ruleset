@@ -1,0 +1,16 @@
+{
+  "name": "@jaedle-kata/eslint-kata-ruleset",
+  "version": "0.1.0",
+  "description": "Kata ruleset for eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Dennis Jekubczyk",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0"
+  }
+}
