@@ -29,6 +29,15 @@ module.exports = {
                             });
                         }
                     },
+                    ForInStatement: function (node) {
+                        if (node.type === "ForInStatement") {
+                            context.report({
+                                node: node,
+                                message:
+                                    "use of for-loops is forbidden",
+                            });
+                        }
+                    },
                 };
             },
         },

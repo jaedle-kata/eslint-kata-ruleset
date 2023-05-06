@@ -17,5 +17,9 @@ ruleTester.run('no-for', rule.rules["@jaedle-kata/no-for"], {
             code: 'for ( let number of numbers ) {console.log(number);}',
             errors: [{ message: 'use of for-loops is forbidden' }],
         },
+        {
+            code: 'for ( const index in names) {console.log(index);}',
+            errors: [{ message: 'use of for-loops is forbidden' }],
+        },
     ],
 });
