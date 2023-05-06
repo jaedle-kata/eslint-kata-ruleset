@@ -20,6 +20,15 @@ module.exports = {
                             });
                         }
                     },
+                    ForOfStatement: function (node) {
+                        if (node.type === "ForOfStatement") {
+                            context.report({
+                                node: node,
+                                message:
+                                    "use of for-loops is forbidden",
+                            });
+                        }
+                    },
                 };
             },
         },
